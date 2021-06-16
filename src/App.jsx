@@ -76,7 +76,7 @@ export function App() {
                 <input type="text" className="input" ref={takeTodoRef} placeholder="Introduce your task"/>
                 <button type="button" className="btn" onClick={handleTodoAdd}><i class="fas fa-plus"></i></button>
             </div>
-            <h3 className="pendingTask">{todos.filter( ( todo ) => !todo.completed ).length} pending tasks</h3>
+            <h3 className="pendingTask">{todos.filter( ( todo ) => todo.completed ).length} pending tasks</h3>
             <div className="contentTodos">
                 <TodoList todos={todos} deleteTask={deleteTask} taskFinished={taskFinished} />
             </div>
