@@ -3,7 +3,7 @@ import { TodoItem } from './TodoItem'
 
 export function TodoList({ todos, deleteTask, taskFinished }) {
     return (
-        <ul>
+        <ul className="list">
             {todos.map( ( todo ) => (
                 <TodoItem key={todo.id} todo={todo} deleteTask={deleteTask} taskFinished={taskFinished} />
             ))}

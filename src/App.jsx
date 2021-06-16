@@ -10,8 +10,8 @@ export function App() {
     // Uso de useState para gestionar los estados dentro de la función. Destructuín para obtener los estados y el modificador de estados
     const [ todos, setTodos ] = useState([{
         id: 1,
-        date: '16/07/2020',
-        task: 'Tarea 1',
+        date: '00/00/0000',
+        task: 'Write my first task',
         completed: false
     }]);
 
@@ -76,7 +76,7 @@ export function App() {
                 <input type="text" className="input" ref={takeTodoRef} placeholder="Introduce your task"/>
                 <button type="button" className="btn" onClick={handleTodoAdd}><i class="fas fa-plus"></i></button>
             </div>
-            <h3 className="pendingTask">{todos.filter( ( todo ) => todo.completed ).length} pending tasks</h3>
+            <h3 className="pendingTask">{todos.filter( ( todo ) => !todo.completed ).length} pending tasks</h3>
             <div className="contentTodos">
                 <TodoList todos={todos} deleteTask={deleteTask} taskFinished={taskFinished} />
             </div>
