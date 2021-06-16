@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(-90deg, #50C9C3, #96DEDA);
+    font-size: 1.8rem;
+}
+
+/* ---------- */
+
+.title1{
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: center;
+    color:#fff;
+}
+
+/* setTodos */
+
+.setTodos{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 1rem #2fa09a;
+    text-align: center;
+}
+
+@media(min-width:1000px){
+    .setTodos{
+        width: 60%;
+    }
+}
+
+.input{
+    width: 80%;
+    padding: 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.btn{
+    width: 20%;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    background-color: #96DEDA;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #b8f3f0;
+}
+
+.pendingTask{
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* contentTodos */
+
+.contentTodos{
+    width: 90%;
+    margin: 5rem auto 0 auto;
+}
+
+.task{
+    list-style: none;
+    font-size: 3rem;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns:1fr 4fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media(min-width:1000px){
+    .contentTodos{
+        width: 40%;
+    }
+}
+
+.check{
+    transform: scale(2);
+}
+
+.close{
+    color: rgb(184, 54, 15);
+}
+
+.close:hover{
+    cursor: pointer;
+    color: rgb(223, 81, 39);
+}
