@@ -1,1 +1,1 @@
-# todoApp-React ( Try it by yourself: https://mytodoapp-react.netlify.app )
+# todoApp-React ( Try it by yourself: mytodoapp-react.netlify.app )
